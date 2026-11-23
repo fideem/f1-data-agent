@@ -1,0 +1,3 @@
+{"id": "q01", "question": "Ile okrążeń przejechał Lando Norris w wyścigu o GP Australii 2025?", "expected": "TODO: sprawdź sama SQL-em i wpisz liczbę", "check": "contains"}
+{"id": "q02", "question": "Który kierowca miał najszybsze okrążenie w wyścigu o GP Australii 2025?", "expected": "TODO", "check": "contains"}
+{"id": "q03", "question": "Ile postojów w alei serwisowej zrobił Max Verstappen w GP Australii 2025?", "expected": "TODO", "check": "contains"}

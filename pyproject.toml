@@ -1,0 +1,38 @@
+[project]
+name = "f1-data-agent"
+version = "0.1.0"
+description = "LLM agent (Claude API + tool calling) that answers questions about Formula 1 data from OpenF1 using SQL in DuckDB."
+readme = "README.md"
+authors = [{ name = "Milena Stępkowska" }]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.70",
+    "duckdb>=1.3",
+    "pandas>=2.2",
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+    "matplotlib>=3.9",
+]
+
+[project.scripts]
+f1-agent = "f1_agent.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.8",
+    "ipykernel>=6.29",
+]
+
+[build-system]
+requires = ["uv_build>=0.8,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "f1_agent"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

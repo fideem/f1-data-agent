@@ -1,0 +1,16 @@
+# sekrety - NIGDY nie commituj klucza API
+.env
+
+# środowisko
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# dane i logi generowane lokalnie
+data/
+logs/*.csv
+!logs/.gitkeep
+charts/
